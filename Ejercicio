@@ -17,13 +17,13 @@ Algoritmo sin_titulo
 	
 	Mientras (0 = 0) Hacer
 		//codigo estudiante
-		Escribir Sin Saltar "¿Cual es tu codigo? "
+		Escribir Sin Saltar "Â¿Cual es tu codigo? "
 		Leer usuario_id 
 		
-		Escribir "¿Que deseas realizar?"
+		Escribir "Â¿Que deseas realizar?"
 		Escribir "1. Prestamo"
 		Escribir "2. Devolucion"
-		Escribir "3. Añadir"
+		Escribir "3. AÃ±adir"
 		Escribir "4. Terminar programa"
 		leer menu
 		
