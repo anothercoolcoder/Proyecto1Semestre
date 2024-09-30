@@ -3,7 +3,7 @@ Algoritmo sin_titulo
 	Definir inv_pelotaFutbol, inv_raqueta, inv_canchaFutbol, inv_guantes, inv_pelotaBasquet como entero
 	Definir inv_canchaBasquet, inv_pelotaPinpong Como Entero
 	definir respuesta Como Caracter
-
+    Definir cerrarsesion Como Caracter
 	//inventario pelotas
 	inv_pelotaBasquet = 10 
 	inv_pelotaFutbol = 10
@@ -17,13 +17,13 @@ Algoritmo sin_titulo
 	
 	Mientras (0 = 0) Hacer
 		//codigo estudiante
-		Escribir Sin Saltar "Â¿Cual es tu codigo? "
+		Escribir Sin Saltar "¿Cual es tu codigo? "
 		Leer usuario_id 
 		
-		Escribir "Â¿Que deseas realizar?"
+		Escribir "¿Que deseas realizar?"
 		Escribir "1. Prestamo"
 		Escribir "2. Devolucion"
-		Escribir "3. AÃ±adir"
+		Escribir "3. Añadir"
 		Escribir "4. Terminar programa"
 		leer menu
 		
@@ -49,7 +49,7 @@ Algoritmo sin_titulo
 									SiNo
 										Escribir "Vuelva pronto"
 									FinSi
-							2: Escribir "disponible " inv_pelotaFutbol ' unidades.'
+							2: Escribir "disponible " inv_canchaFutbol ' unidades.'
 							 Escribir "Prestamo deportivo por 30 minutos si (s) / no (n)"
 								
 								leer respuesta
@@ -59,7 +59,7 @@ Algoritmo sin_titulo
 								SiNo
 									Escribir "Vuelva pronto"
 								FinSi
-							3: Escribir "disponible " inv_pelotaFutbol ' unidades.'
+							3: Escribir "disponible " inv_guantes ' unidades.'
 							    Escribir "Prestamo deportivo por 30 minutos si (s) / no (n)"
 								leer respuesta
 								si (respuesta == "S") o (respuesta == "s") Entonces
@@ -75,7 +75,7 @@ Algoritmo sin_titulo
 						Escribir "Cancha "
 						leer sport_id
 						Segun sport_id
-							1: Escribir "disponible " inv_pelotaFutbol ' unidades.'
+							1: Escribir "disponible " inv_pelotabasquet ' unidades.'
 								Escribir "Prestamo deportivo por 30 minutos si (s) / no (n)"
 								leer respuesta
 								si (respuesta == "S") o (respuesta == "s") Entonces
@@ -84,7 +84,7 @@ Algoritmo sin_titulo
 								SiNo
 									Escribir "Vuelva pronto"
 								FinSi
-							2: Escribir "disponible " inv_pelotaFutbol ' unidades.'
+							2: Escribir "disponible " inv_chancaBasquet' unidades.'
 								Escribir "Prestamo deportivo por 30 minutos si (s) / no (n)"
 								leer respuesta
 								si (respuesta == "S") o (respuesta == "s") Entonces
@@ -123,6 +123,11 @@ Algoritmo sin_titulo
 			2:escribir 'DEVOLUCION'
 				
 		FinSegun
+		Escribir 'cerrar sesion si (s) o No (n)'
+		leer cerrarsesion
+		si cerrarsesion= 's' o cerrarsesion = 'S' Entonces 
+			Borrar Pantalla
+		FinSi
 	FinMientras
 	Borrar Pantalla
 	//variable para almacenar la totalidad, tipoentero
