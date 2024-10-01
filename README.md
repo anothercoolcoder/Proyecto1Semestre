@@ -38,3 +38,4 @@ Leer menu
 - **Oscar Chaparro**
 
 Este proyecto es parte de nuestra formación en el manejo de algoritmos, contribuyendo a la gestión eficiente de recursos deportivos en la UPTC. ¡Esperamos que sea de gran utilidad para nuestra comunidad!
+    
