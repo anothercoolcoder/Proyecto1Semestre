@@ -22,8 +22,7 @@ Algoritmo Prestamo_Deportivo
 		Escribir "¿Qué deseas realizar?"
 		Escribir "1. Préstamo"
 		Escribir "2. Devolución"
-		Escribir "3. Añadir"
-		Escribir "4. Terminar programa"
+		Escribir "3. Terminar programa"
 		Leer menu
 		
 		Segun menu Hacer
@@ -199,78 +198,9 @@ Algoritmo Prestamo_Deportivo
 								Escribir "Devolución exitosa. Pelotas de ping pong disponibles: ", inv_pelotaPinpong
 			FinSegun
 	FinSegun
-
-				// Opción 3: Añadir
-			3: 
-				Escribir "AÑADIR AL INVENTARIO"
-				Escribir "1. Fútbol"
-				Escribir "2. Básquet"
-				Escribir "3. Ping pong"
-				Leer sport_id
 				
-				Segun sport_id Hacer
-						// Fútbol
-					1:
-						Escribir "Sección de fútbol"
-						Escribir "1. Pelota"
-						Escribir "2. Cancha"
-						Escribir "3. Guantes"
-						Leer objeto_id
-						
-						Segun objeto_id Hacer
-							1: Escribir "¿Cuántas pelotas de fútbol deseas añadir?"
-								Leer cantidad
-								inv_pelotaFutbol = inv_pelotaFutbol + cantidad
-								Escribir "Inventario actualizado. Pelotas de fútbol disponibles: ", inv_pelotaFutbol
-							2: Escribir "¿Cuántas canchas de fútbol deseas añadir?"
-								Leer cantidad
-								inv_canchaFutbol = inv_canchaFutbol + cantidad
-								Escribir "Inventario actualizado. Canchas de fútbol disponibles: ", inv_canchaFutbol
-							3: Escribir "¿Cuántos guantes deseas añadir?"
-								Leer cantidad
-								inv_guantes = inv_guantes + cantidad
-								Escribir "Inventario actualizado. Guantes disponibles: ", inv_guantes
-						FinSegun
-						
-						// Básquet
-					2:
-						Escribir "Sección de básquet"
-						Escribir "1. Pelota"
-						Escribir "2. Cancha"
-						Leer objeto_id
-						
-						Segun objeto_id Hacer
-							1: Escribir "¿Cuántas pelotas de básquet deseas añadir?"
-								Leer cantidad
-								inv_pelotaBasquet = inv_pelotaBasquet + cantidad
-								Escribir "Inventario actualizado. Pelotas de básquet disponibles: ", inv_pelotaBasquet
-							2: Escribir "¿Cuántas canchas de básquet deseas añadir?"
-								Leer cantidad
-								inv_canchaBasquet = inv_canchaBasquet + cantidad
-								Escribir "Inventario actualizado. Canchas de básquet disponibles: ", inv_canchaBasquet
-						FinSegun
-						
-						// Ping pong
-					3:
-						Escribir "Sección de ping pong"
-						Escribir "1. Raqueta"
-						Escribir "2. Pelota"
-						Leer objeto_id
-						
-						Segun objeto_id Hacer
-							1: Escribir "¿Cuántas raquetas deseas añadir?"
-								Leer cantidad
-								inv_raqueta = inv_raqueta + cantidad
-								Escribir "Inventario actualizado. Raquetas disponibles: ", inv_raqueta
-							2: Escribir "¿Cuántas pelotas de ping pong deseas añadir?"
-								Leer cantidad
-								inv_pelotaPinpong = inv_pelotaPinpong + cantidad
-								Escribir "Inventario actualizado. Pelotas de ping pong disponibles: ", inv_pelotaPinpong
-						FinSegun
-	FinSegun
-				
-				// Opción 4: Terminar programa
-			4:
+				// Opción 3: Terminar programa
+			3:
 				Escribir "Programa finalizado."
 		FinSegun
 		
