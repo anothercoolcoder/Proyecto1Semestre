@@ -1,7 +1,3 @@
-Aquí tienes una versión mejorada de la introducción en formato Markdown:
-
----
-
 # Bienvenida
 
 ¡Bienvenidos a nuestro proyecto para la clase de Algoritmos!
