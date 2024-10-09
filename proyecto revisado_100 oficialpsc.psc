@@ -19,7 +19,7 @@ Algoritmo Prestamo_Deportivo
 	// Bucle principal
 	
 	Mientras iniciar<>0 Hacer
-		Escribir Sin Saltar "¿Cuál es tu código? "
+		Escribir Sin Saltar "Â¿CuÃ¡l es tu cÃ³digo? "
 		Leer usuario_id
 		z=Longitud(usuario_id)
 		
@@ -69,33 +69,33 @@ Algoritmo Prestamo_Deportivo
 			sino escribir 'no es un codigo institucional'
 			FinSi
 		si esvalido=Verdadero entonces
-			Escribir "¿Qué deseas realizar?"
-			Escribir "1. Préstamo"
-			Escribir "2. Devolución"
+			Escribir "Â¿QuÃ© deseas realizar?"
+			Escribir "1. PrÃ©stamo"
+			Escribir "2. DevoluciÃ³n"
 			Escribir "3. Terminar programa"
 			Leer menu
 			Segun menu Hacer
-					1: // Opción 1: Préstamo
+					1: // OpciÃ³n 1: PrÃ©stamo
 						Escribir "PRESTAMO DEPORTIVO"
-						Escribir "1. Fútbol"
-						Escribir "2. Básquet"
+						Escribir "1. FÃºtbol"
+						Escribir "2. BÃ¡squet"
 						Escribir "3. Ping pong"
 						Leer sport_id
 						
 						Segun sport_id Hacer
-							1:// Fútbol
-								Escribir "Sección de fútbol"
+							1:// FÃºtbol
+								Escribir "SecciÃ³n de fÃºtbol"
 								Escribir "1. Pelota"
 								Escribir "2. Guantes"
 								Leer objeto_id
 								
 								Segun objeto_id Hacer
-									1: Escribir "Pelotas de fútbol disponibles: ", inv_pelotaFutbol
-										Escribir "¿Deseas realizar el préstamo por 30 minutos? (s/n)"
+									1: Escribir "Pelotas de fÃºtbol disponibles: ", inv_pelotaFutbol
+										Escribir "Â¿Deseas realizar el prÃ©stamo por 30 minutos? (s/n)"
 										Leer respuesta
 										Si respuesta == "s" o respuesta == "S" Entonces
 											inv_pelotaFutbol = inv_pelotaFutbol - 1
-											Escribir "El préstamo ha sido exitoso."
+											Escribir "El prÃ©stamo ha sido exitoso."
 											
 										SiNo  
 											si respuesta == "n" o respuesta == "N" Entonces
@@ -105,11 +105,11 @@ Algoritmo Prestamo_Deportivo
 											FinSi
 										FinSi
 									2:	Escribir "Guantes disponibles: ", inv_guantes
-										Escribir "¿Deseas realizar el préstamo por 30 minutos? (s/n)"
+										Escribir "Â¿Deseas realizar el prÃ©stamo por 30 minutos? (s/n)"
 										Leer respuesta
 										Si respuesta == "s" o respuesta == "S" Entonces
 											inv_guantes = inv_guantes - 1
-											Escribir "El préstamo ha sido exitoso."
+											Escribir "El prÃ©stamo ha sido exitoso."
 										SiNo
 											si respuesta == "n" o respuesta == "N" Entonces
 												Escribir 'vuelva pronto'
@@ -120,19 +120,19 @@ Algoritmo Prestamo_Deportivo
 									De Otro Modo:
 										Escribir "Opcion no valida"
 								FinSegun
-							2:// Básquet
-								Escribir "Sección de básquet"
+							2:// BÃ¡squet
+								Escribir "SecciÃ³n de bÃ¡squet"
 								Escribir "1. Pelota"
 								Escribir "2. Peto"
 								Leer objeto_id
 								
 								Segun objeto_id Hacer
-									1: Escribir "Pelotas de básquet disponibles: ", inv_pelotaBasquet
-										Escribir "¿Deseas realizar el préstamo por 30 minutos? (s/n)"
+									1: Escribir "Pelotas de bÃ¡squet disponibles: ", inv_pelotaBasquet
+										Escribir "Â¿Deseas realizar el prÃ©stamo por 30 minutos? (s/n)"
 										Leer respuesta
 										Si respuesta == "s" o respuesta == "S" Entonces
 											inv_pelotaBasquet = inv_pelotaBasquet - 1
-											Escribir "El préstamo ha sido exitoso."
+											Escribir "El prÃ©stamo ha sido exitoso."
 										SiNo
 											si respuesta == "n" o respuesta == "N" Entonces
 											Escribir 'vuelva pronto'
@@ -140,12 +140,12 @@ Algoritmo Prestamo_Deportivo
 											escribir 'opcion no valida'
 										FinSi
 										FinSi
-									2: Escribir "peto de básquet disponibles: ", inv_petoBasquet
-										Escribir "¿Deseas realizar el préstamo por 30 minutos? (s/n)"
+									2: Escribir "peto de bÃ¡squet disponibles: ", inv_petoBasquet
+										Escribir "Â¿Deseas realizar el prÃ©stamo por 30 minutos? (s/n)"
 										Leer respuesta
 										Si respuesta == "s" o respuesta == "S" Entonces
 											inv_petoBasquet = inv_petoBasquet - 1
-											Escribir "El préstamo ha sido exitoso."
+											Escribir "El prÃ©stamo ha sido exitoso."
 										SiNo
 											si respuesta == "n" o respuesta == "N" Entonces
 												Escribir 'vuelva pronto'
@@ -157,18 +157,18 @@ Algoritmo Prestamo_Deportivo
 										Escribir "Opcion no valida"
 								FinSegun
 							3:// Ping pong
-								Escribir "Sección de ping pong"
+								Escribir "SecciÃ³n de ping pong"
 								Escribir "1. Raqueta"
 								Escribir "2. Pelota"
 								Leer objeto_id
 								
 								Segun objeto_id Hacer
 									1: Escribir "Raquetas disponibles: ", inv_raquetapinpong
-										Escribir "¿Deseas realizar el préstamo por 30 minutos? (s/n)"
+										Escribir "Â¿Deseas realizar el prÃ©stamo por 30 minutos? (s/n)"
 										Leer respuesta
 										Si respuesta == "s" o respuesta == "S" Entonces
 											inv_raquetapinpong = inv_raquetapinpong - 1
-											Escribir "El préstamo ha sido exitoso."
+											Escribir "El prÃ©stamo ha sido exitoso."
 										SiNo
 											si respuesta == "n" o respuesta == "N" Entonces
 												Escribir 'vuelva pronto'
@@ -177,11 +177,11 @@ Algoritmo Prestamo_Deportivo
 											FinSi
 										FinSi
 									2: Escribir "Pelotas de ping pong disponibles: ", inv_pelotaPinpong
-										Escribir "¿Deseas realizar el préstamo por 30 minutos? (s/n)"
+										Escribir "Â¿Deseas realizar el prÃ©stamo por 30 minutos? (s/n)"
 										Leer respuesta
 										Si respuesta == "s" o respuesta == "S" Entonces
 											inv_pelotaPinpong = inv_pelotaPinpong - 1
-											Escribir "El préstamo ha sido exitoso."
+											Escribir "El prÃ©stamo ha sido exitoso."
 										SiNo
 											si respuesta == "n" o respuesta == "N" Entonces
 												Escribir 'vuelva pronto'
@@ -193,77 +193,77 @@ Algoritmo Prestamo_Deportivo
 						FinSegun
 					De Otro Modo:
 						Escribir "Opcion no valida"
-					2: // Opción 2: Devolución
-						Escribir "DEVOLUCIÓN DE MATERIAL DEPORTIVO"
-						Escribir "1. Fútbol"
-						Escribir "2. Básquet"
+					2: // OpciÃ³n 2: DevoluciÃ³n
+						Escribir "DEVOLUCIÃ“N DE MATERIAL DEPORTIVO"
+						Escribir "1. FÃºtbol"
+						Escribir "2. BÃ¡squet"
 						Escribir "3. Ping pong"
 						Leer sport_id
 						
 						Segun sport_id Hacer
-							1:// Fútbol
-								Escribir "Sección de fútbol"
+							1:// FÃºtbol
+								Escribir "SecciÃ³n de fÃºtbol"
 								Escribir "1. Pelota"
 								Escribir "2. Guantes"
 								Leer objeto_id
 								
 								Segun objeto_id Hacer
-									1: Escribir "¿Cuántas pelotas de fútbol deseas devolver?"
+									1: Escribir "Â¿CuÃ¡ntas pelotas de fÃºtbol deseas devolver?"
 										Leer cantidad
 										inv_pelotaFutbol = inv_pelotaFutbol + cantidad
-										Escribir "Devolución exitosa. Pelotas de fútbol disponibles: ", inv_pelotaFutbol
-									2: Escribir "¿Cuántos guantes deseas devolver?"
+										Escribir "DevoluciÃ³n exitosa. Pelotas de fÃºtbol disponibles: ", inv_pelotaFutbol
+									2: Escribir "Â¿CuÃ¡ntos guantes deseas devolver?"
 										Leer cantidad
 										inv_guantes = inv_guantes + cantidad
-										Escribir "Devolución exitosa. Guantes disponibles: ", inv_guantes
+										Escribir "DevoluciÃ³n exitosa. Guantes disponibles: ", inv_guantes
 								FinSegun
 							De Otro Modo:
 								Escribir "Opcion no valida"
-							2:// Básquet
-								Escribir "Sección de básquet"
+							2:// BÃ¡squet
+								Escribir "SecciÃ³n de bÃ¡squet"
 								Escribir "1. Pelota"
 								Escribir "2. Peto"
 								Leer objeto_id
 								
 								Segun objeto_id Hacer
-									1: Escribir "¿Cuántas pelotas de básquet deseas devolver?"
+									1: Escribir "Â¿CuÃ¡ntas pelotas de bÃ¡squet deseas devolver?"
 										Leer cantidad
 										inv_pelotaBasquet = inv_pelotaBasquet + cantidad
-										Escribir "Devolución exitosa. Pelotas de básquet disponibles: ", inv_pelotaBasquet
-									2: Escribir "¿Cuántos petos de básquet deseas devolver?"
+										Escribir "DevoluciÃ³n exitosa. Pelotas de bÃ¡squet disponibles: ", inv_pelotaBasquet
+									2: Escribir "Â¿CuÃ¡ntos petos de bÃ¡squet deseas devolver?"
 										Leer cantidad
 										inv_petoBasquet = inv_petoBasquet + cantidad
-										Escribir "Devolución exitosa. Petos de básquet disponibles: ", inv_petoBasquet
+										Escribir "DevoluciÃ³n exitosa. Petos de bÃ¡squet disponibles: ", inv_petoBasquet
 								FinSegun
 							De Otro Modo:
 								Escribir "Opcion no valida"
 							3:// Ping pong
-								Escribir "Sección de ping pong"
+								Escribir "SecciÃ³n de ping pong"
 								Escribir "1. Raqueta"
 								Escribir "2. Pelota"
 								Leer objeto_id
 								
 								Segun objeto_id Hacer
-									1: Escribir "¿Cuántas raquetas deseas devolver?"
+									1: Escribir "Â¿CuÃ¡ntas raquetas deseas devolver?"
 										Leer cantidad
 										inv_raquetapinpong = inv_raquetapinpong + cantidad
-										Escribir "Devolución exitosa. Raquetas disponibles: ", inv_raquetapinpong
-									2: Escribir "¿Cuántas pelotas de ping pong deseas devolver?"
+										Escribir "DevoluciÃ³n exitosa. Raquetas disponibles: ", inv_raquetapinpong
+									2: Escribir "Â¿CuÃ¡ntas pelotas de ping pong deseas devolver?"
 										Leer cantidad
 										inv_pelotaPinpong = inv_pelotaPinpong + cantidad
-										Escribir "Devolución exitosa. Pelotas de ping pong disponibles: ", inv_pelotaPinpong
+										Escribir "DevoluciÃ³n exitosa. Pelotas de ping pong disponibles: ", inv_pelotaPinpong
 								FinSegun
 							De Otro Modo:
 								Escribir "Opcion no valida"
 						FinSegun
-						// Opción 3: Terminar programa
+						// OpciÃ³n 3: Terminar programa
 					3:
 						Escribir "Programa finalizado."
 					De Otro Modo:
 						Escribir "Opcion no valida"
 				FinSegun
-				// Opción de cerrar sesión
-				Escribir "¿Cerrar sesión? (s/n)"
+				// OpciÃ³n de cerrar sesiÃ³n
+				Escribir "Â¿Cerrar sesiÃ³n? (s/n)"
 				Leer cerrarSesion
 				Si cerrarSesion == "s" o cerrarSesion == "S" Entonces
 					Escribir 'vuelva pronto'
@@ -276,7 +276,7 @@ Algoritmo Prestamo_Deportivo
 					FinSi
 				FinSi 
 			fin si
-		sino si z<9 entonces
+		sino si z<9 o z>9 entonces
 				escribir 'incorrecto:codigo fuera del limite establecido'
 				escribir'vuelve a ingresarlo'
 				esvalido= Falso
